@@ -85,6 +85,7 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" MATCHES "GNU")
                       -Wduplicated-branches
                       -Wcast-align=strict
                       -Wmissing-include-dirs
+                      -Wshadow
                       -Wno-missing-declarations)
 elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
   target_compile_options(boost.ut INTERFACE
